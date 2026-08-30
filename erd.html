@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD — Ticketify</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'dark', fontSize: 14 });
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background: #09090b;
+            color: #f4f4f5;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #a1a1aa;
+        }
+        .mermaid {
+            background: #09090b;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #27272a;
+            overflow-x: auto;
+        }
+        .legend {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .legend-item {
+            background: #121212;
+            border: 1px solid #27272a;
+            border-radius: 0.75rem;
+            padding: 1rem;
+        }
+        .legend-item h3 {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #71717a;
+            margin: 0 0 0.5rem;
+        }
+        .legend-item table {
+            width: 100%;
+            font-size: 0.75rem;
+            border-collapse: collapse;
+        }
+        .legend-item td {
+            padding: 0.2rem 0.25rem;
+            border-bottom: 1px solid #1a1a1e;
+        }
+        .legend-item td:first-child {
+            color: #71717a;
+            font-family: monospace;
+        }
+        .legend-item td:last-child {
+            color: #d4d4d8;
+        }
+        .pk { color: #fbbf24 !important; }
+        .fk { color: #60a5fa !important; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Entity Relationship Diagram — Ticketify</h1>
+        <div class="mermaid">
+erDiagram
+    users {
+        bigint id PK
+        string nim UK
+        string name
+        string email
+        string phone_number
+        string password
+        enum role "pembeli | panitia | admin"
+        string profile_picture
+        datetime created_at
+        datetime updated_at
+        datetime deleted_at
+    }
+
+    events {
+        bigint id PK
+        bigint user_id FK
+        bigint category_id FK
+        string banner
+        string name
+        string location
+        date date
+        time time_start
+        time time_end
+        text description
+        text terms
+        text organiser_description
+        string organiser_photo
+        string status "pending | published | unpublished | rejected"
+        text unpublish_reason
+        datetime unpublished_at
+        datetime refund_date
+        string refund_location
+        text refund_info
+        datetime created_at
+        datetime updated_at
+    }
+
+    categories {
+        bigint id PK
+        string name UK
+        datetime created_at
+        datetime updated_at
+        datetime deleted_at
+    }
+
+    tickets {
+        bigint id PK
+        bigint user_id FK
+        bigint event_id FK
+        bigint order_id FK
+        string ticket_type
+        enum status "Active | Used | Expired | Canceled"
+        decimal price
+        integer stock
+        datetime purchase_date
+        datetime date_used
+        string qr_code UK
+        boolean is_attended
+        timestamp attended_at
+        datetime created_at
+        datetime updated_at
+    }
+
+    orders {
+        bigint id PK
+        bigint user_id FK
+        bigint event_id FK
+        string order_code UK
+        string snap_token
+        string payment_url
+        string ticket_type
+        integer quantity
+        decimal price_per_ticket
+        decimal total_amount
+        json ticket_items
+        enum status "pending | paid | failed | expired | cancelled"
+        string payment_type
+        string transaction_id
+        timestamp paid_at
+        timestamp expired_at
+        datetime created_at
+        datetime updated_at
+    }
+
+    ukms {
+        bigint id PK
+        string nama_ukm UK
+        datetime created_at
+        datetime updated_at
+    }
+
+    role_applications {
+        bigint id PK
+        bigint user_id FK
+        bigint ukm_id FK
+        string nomor_rekening
+        enum status "pending | approved | rejected"
+        datetime created_at
+        datetime updated_at
+    }
+
+    panitia_profiles {
+        bigint id PK
+        bigint user_id FK
+        string asal_ukm
+        string no_rekening
+        datetime created_at
+        datetime updated_at
+    }
+
+    role_settings {
+        bigint id PK
+        enum role "admin | panitia | pembeli"
+        string key UK
+        text value
+        text description
+        boolean is_active
+        datetime created_at
+        datetime updated_at
+    }
+
+    users ||--o{ events : "membuat"
+    users ||--o{ tickets : "memiliki"
+    users ||--o{ orders : "melakukan_pembayaran"
+    users ||--o{ role_applications : "mengajukan"
+    users ||--o| panitia_profiles : "memiliki_profil_panitia"
+    events ||--o{ tickets : "mempunyai"
+    events }o--|| categories : "dikategorikan"
+    events ||--o{ orders : "dibeli_melalui"
+    orders ||--o{ tickets : "menghasilkan"
+    ukms ||--o{ role_applications : "diajukan_ke"
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <h3>🔑 users</h3>
+                <table>
+                    <tr><td>id</td><td class="pk">PK — bigint</td></tr>
+                    <tr><td>nim</td><td>string (unique)</td></tr>
+                    <tr><td>name</td><td>string</td></tr>
+                    <tr><td>email</td><td>string (nullable)</td></tr>
+                    <tr><td>phone_number</td><td>string</td></tr>
+                    <tr><td>password</td><td>string (hashed)</td></tr>
+                    <tr><td>role</td><td>enum: pembeli, panitia, admin</td></tr>
+                    <tr><td>profile_picture</td><td>string (nullable)</td></tr>
+                    <tr><td>deleted_at</td><td>soft delete</td></tr>
+                </table>
+            </div>
+            <div class="legend-item">
+                <h3>🎫 events</h3>
+                <table>
+                    <tr><td>id</td><td class="pk">PK</td></tr>
+                    <tr><td>user_id</td><td class="fk">FK → users</td></tr>
+                    <tr><td>category_id</td><td class="fk">FK → categories (nullable)</td></tr>
+                    <tr><td>status</td><td>string: pending, published, unpublished, rejected</td></tr>
+                    <tr><td>unpublish_reason</td><td>text (nullable)</td></tr>
+                    <tr><td>refund_date/location/info</td><td>— (nullable)</td></tr>
+                </table>
+            </div>
+            <div class="legend-item">
+                <h3>🏷 categories</h3>
+                <table>
+                    <tr><td>id</td><td class="pk">PK</td></tr>
+                    <tr><td>name</td><td>string (unique)</td></tr>
+                    <tr><td>deleted_at</td><td>soft delete</td></tr>
+                </table>
+            </div>
+            <div class="legend-item">
+                <h3>🎟 tickets</h3>
+                <table>
+                    <tr><td>id</td><td class="pk">PK</td></tr>
+                    <tr><td>user_id</td><td class="fk">FK → users</td></tr>
+                    <tr><td>event_id</td><td class="fk">FK → events</td></tr>
+                    <tr><td>order_id</td><td class="fk">FK → orders (nullable)</td></tr>
+                    <tr><td>status</td><td>enum: Active, Used, Expired, Canceled</td></tr>
+                    <tr><td>qr_code</td><td>string (unique, nullable)</td></tr>
+                    <tr><td>is_attended</td><td>boolean</td></tr>
+                </table>
+            </div>
+            <div class="legend-item">
+                <h3>🧾 orders</h3>
+                <table>
+                    <tr><td>id</td><td class="pk">PK</td></tr>
+                    <tr><td>user_id</td><td class="fk">FK → users</td></tr>
+                    <tr><td>event_id</td><td class="fk">FK → events</td></tr>
+                    <tr><td>order_code</td><td>string (unique)</td></tr>
+                    <tr><td>ticket_type/price_per_ticket</td><td>nullable (since multi-ticket)</td></tr>
+                    <tr><td>ticket_items</td><td>JSON array</td></tr>
+                    <tr><td>status</td><td>enum: pending, paid, failed, expired, cancelled</td></tr>
+                </table>
+            </div>
+            <div class="legend-item">
+                <h3>🏛 ukms / role_applications / panitia_profiles</h3>
+                <table>
+                    <tr><td>ukms.id</td><td class="pk">PK — master UKM</td></tr>
+                    <tr><td>role_apps.user_id</td><td class="fk">FK → users (pemohon)</td></tr>
+                    <tr><td>role_apps.ukm_id</td><td class="fk">FK → ukms</td></tr>
+                    <tr><td>role_apps.status</td><td>pending, approved, rejected</td></tr>
+                    <tr><td>panitia_profiles.user_id</td><td class="fk">FK → users (setelah approved)</td></tr>
+                </table>
+            </div>
+            <div class="legend-item">
+                <h3>⚙ role_settings</h3>
+                <table>
+                    <tr><td>key</td><td>string (unique)</td></tr>
+                    <tr><td>role</td><td>enum: admin, panitia, pembeli</td></tr>
+                    <tr><td>value</td><td>text</td></tr>
+                    <tr><td>is_active</td><td>boolean</td></tr>
+                </table>
+            </div>
+            <div class="legend-item" style="border-color:#fbbf24">
+                <h3>📖 Legenda</h3>
+                <table>
+                    <tr><td class="pk">PK</td><td>Primary Key</td></tr>
+                    <tr><td class="fk">FK</td><td>Foreign Key</td></tr>
+                    <tr><td>UK</td><td>Unique Key</td></tr>
+                    <tr><td style="color:#a78bfa">||--o{</td><td>one-to-many</td></tr>
+                    <tr><td style="color:#a78bfa">}o--||</td><td>many-to-one</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
