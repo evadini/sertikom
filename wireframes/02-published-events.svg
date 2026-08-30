@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="Inter, sans-serif">
+  <rect width="900" height="600" fill="#fff"/>
+  <rect x="0" y="0" width="900" height="56" fill="#fff"/>
+  <line x1="0" y1="56" x2="900" y2="56" stroke="#d4d4d4" stroke-width="1"/>
+  <rect x="16" y="14" width="28" height="28" rx="6" fill="#1a1a1a"/>
+  <text x="20" y="33" font-size="12" font-weight="bold" fill="#fff">T</text>
+  <text x="52" y="34" font-size="16" font-weight="bold" fill="#1a1a1a">Ticketify</text>
+  <rect x="148" y="14" width="80" height="28" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="158" y="33" font-size="11" fill="#666">Dashboard</text>
+  <rect x="232" y="14" width="76" height="28" rx="6" fill="#1a1a1a"/>
+  <text x="244" y="33" font-size="11" fill="#fff">Published</text>
+  <rect x="312" y="14" width="66" height="28" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="324" y="33" font-size="11" fill="#666">Pending</text>
+  <rect x="382" y="14" width="56" height="28" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="392" y="33" font-size="11" fill="#666">Users</text>
+  <rect x="442" y="14" width="54" height="28" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="452" y="33" font-size="11" fill="#666">Roles</text>
+  <rect x="500" y="14" width="82" height="28" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="514" y="33" font-size="11" fill="#666">Categories</text>
+  <rect x="586" y="14" width="64" height="28" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="598" y="33" font-size="11" fill="#666">Statistik</text>
+  <circle cx="828" cy="28" r="16" fill="#e5e5e5"/>
+  <text x="823" y="33" font-size="10" fill="#666">⚙</text>
+  <circle cx="864" cy="28" r="14" fill="#d4d4d4"/>
+  <text x="859" y="33" font-size="9" fill="#666">A</text>
+
+  <text x="32" y="96" font-size="20" font-weight="bold" fill="#1a1a1a">Published Events</text>
+  <line x1="32" y1="104" x2="120" y2="104" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Dropdown filter -->
+  <rect x="32" y="120" width="140" height="32" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="46" y="141" font-size="11" fill="#666">▼ All Categories</text>
+
+  <!-- Cards -->
+  <rect x="32" y="168" width="260" height="230" rx="8" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <rect x="32" y="168" width="260" height="100" rx="8" fill="#e5e5e5"/>
+  <text x="52" y="296" font-size="13" font-weight="bold" fill="#1a1a1a">Workshop AI</text>
+  <text x="52" y="316" font-size="10" fill="#666">📍 15 Jul 2026 · 09:00 WIB</text>
+  <text x="52" y="334" font-size="10" fill="#666">🏛 Gedung A, Polibatam</text>
+  <text x="52" y="360" font-size="14" font-weight="bold" fill="#1a1a1a">Rp 50.000</text>
+  <rect x="52" y="374" width="60" height="24" rx="6" fill="#e5e5e5"/><text x="66" y="390" font-size="10" fill="#666">Detail</text>
+  <rect x="220" y="374" width="60" height="24" rx="6" fill="#d4d4d4"/><text x="236" y="390" font-size="10" fill="#666">▼</text>
+
+  <rect x="308" y="168" width="260" height="230" rx="8" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <rect x="308" y="168" width="260" height="100" rx="8" fill="#e5e5e5"/>
+  <text x="328" y="296" font-size="13" font-weight="bold" fill="#1a1a1a">Campus Expo</text>
+  <text x="328" y="316" font-size="10" fill="#666">📍 20 Jul 2026 · 10:00 WIB</text>
+  <text x="328" y="334" font-size="10" fill="#666">🏛 GOR Polibatam</text>
+  <text x="328" y="360" font-size="14" font-weight="bold" fill="#1a1a1a">Gratis</text>
+  <rect x="328" y="374" width="60" height="24" rx="6" fill="#e5e5e5"/><text x="342" y="390" font-size="10" fill="#666">Detail</text>
+  <rect x="496" y="374" width="60" height="24" rx="6" fill="#d4d4d4"/><text x="512" y="390" font-size="10" fill="#666">▼</text>
+
+  <rect x="584" y="168" width="260" height="230" rx="8" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <rect x="584" y="168" width="260" height="100" rx="8" fill="#e5e5e5"/>
+  <text x="604" y="296" font-size="13" font-weight="bold" fill="#1a1a1a">Tech Seminar</text>
+  <text x="604" y="316" font-size="10" fill="#666">📍 5 Agu 2026 · 13:00 WIB</text>
+  <text x="604" y="334" font-size="10" fill="#666">🏛 Aula Polibatam</text>
+  <text x="604" y="360" font-size="14" font-weight="bold" fill="#1a1a1a">Rp 75.000</text>
+  <rect x="604" y="374" width="60" height="24" rx="6" fill="#e5e5e5"/><text x="618" y="390" font-size="10" fill="#666">Detail</text>
+  <rect x="772" y="374" width="60" height="24" rx="6" fill="#d4d4d4"/><text x="788" y="390" font-size="10" fill="#666">▼</text>
+
+  <!-- Unpublish Modal -->
+  <rect x="270" y="160" width="360" height="220" rx="12" fill="#fff" stroke="#d4d4d4" stroke-width="1" filter="url(#s)"/>
+  <defs><filter id="s"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.12"/></filter></defs>
+  <circle cx="450" cy="186" r="20" fill="#e5e5e5"/>
+  <text x="445" y="192" font-size="16" fill="#666">!</text>
+  <text x="360" y="226" font-size="14" font-weight="bold" fill="#1a1a1a">Unpublish Event</text>
+  <rect x="300" y="244" width="300" height="40" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+  <text x="314" y="268" font-size="10" fill="#999">Alasan unpublish (min 10 char)...</text>
+  <text x="314" y="286" font-size="9" fill="#999">0/500</text>
+  <rect x="300" y="300" width="130" height="30" rx="6" fill="#e5e5e5"/><text x="340" y="320" font-size="11" fill="#666">Batal</text>
+  <rect x="440" y="300" width="160" height="30" rx="6" fill="#1a1a1a"/><text x="496" y="320" font-size="11" fill="#fff">Unpublish</text>
+</svg>

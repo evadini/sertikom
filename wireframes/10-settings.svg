@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Inter, sans-serif">
+  <rect width="800" height="600" fill="#fff"/>
+  <rect x="0" y="0" width="180" height="600" fill="#1e293b"/>
+  <rect x="12" y="12" width="156" height="24" rx="4" fill="#334155"/>
+  <text x="24" y="29" font-size="11" fill="#94a3b8">☰  Ticketify</text>
+  <rect x="12" y="52" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="70" font-size="11" fill="#94a3b8">■  Dashboard</text>
+  <rect x="12" y="86" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="104" font-size="11" fill="#94a3b8">■  Published</text>
+  <rect x="12" y="120" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="138" font-size="11" fill="#94a3b8">■  Pending</text>
+  <rect x="12" y="154" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="172" font-size="11" fill="#94a3b8">■  Users</text>
+  <rect x="12" y="188" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="206" font-size="11" fill="#94a3b8">■  Roles</text>
+  <rect x="12" y="222" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="240" font-size="11" fill="#94a3b8">■  Categories</text>
+  <rect x="12" y="256" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="274" font-size="11" fill="#94a3b8">■  Statistik</text>
+
+  <rect x="180" y="0" width="620" height="48" fill="#f8fafc"/>
+  <line x1="180" y1="48" x2="800" y2="48" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="196" y="30" font-size="15" font-weight="bold" fill="#1e293b">Settings</text>
+
+  <!-- Tabs -->
+  <rect x="196" y="60" width="110" height="32" rx="6" fill="#3b82f6"/>
+  <text x="212" y="80" font-size="10" fill="#fff">Profile Details</text>
+  <rect x="310" y="60" width="90" height="32" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="328" y="80" font-size="10" fill="#64748b">Security</text>
+
+  <!-- Profile card -->
+  <rect x="196" y="104" width="440" height="400" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="216" y="132" font-size="13" font-weight="bold" fill="#1e293b">Profile Details</text>
+  <text x="216" y="150" font-size="10" fill="#64748b">Kelola informasi profil admin.</text>
+
+  <!-- Avatar -->
+  <circle cx="246" cy="198" r="28" fill="#e2e8f0"/>
+  <text x="238" y="203" font-size="18" fill="#94a3b8">👤</text>
+  <rect x="286" y="186" width="80" height="22" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="300" y="200" font-size="9" fill="#475569">Upload Foto</text>
+
+  <!-- Form fields -->
+  <text x="216" y="250" font-size="10" fill="#64748b">Nama Lengkap</text>
+  <rect x="216" y="255" width="400" height="32" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="226" y="275" font-size="10" fill="#1e293b">Admin Ticketify</text>
+
+  <text x="216" y="300" font-size="10" fill="#64748b">Email</text>
+  <rect x="216" y="305" width="400" height="32" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="226" y="325" font-size="10" fill="#1e293b">admin@ticketify.com</text>
+
+  <text x="216" y="350" font-size="10" fill="#64748b">Nomor Telepon</text>
+  <rect x="216" y="355" width="400" height="32" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="226" y="375" font-size="10" fill="#94a3b8">Masukkan nomor telepon...</text>
+
+  <!-- Save button -->
+  <rect x="196" y="520" width="440" height="40" rx="8" fill="#3b82f6" opacity="0.5"/>
+  <text x="388" y="545" font-size="11" font-weight="bold" fill="#fff">Simpan Perubahan</text>
+
+  <!-- Security tab content (hidden, shown as outline) -->
+  <rect x="196" y="104" width="440" height="400" rx="12" fill="none" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+</svg>

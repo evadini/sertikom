@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Inter, sans-serif">
+  <rect width="800" height="600" fill="#fff"/>
+  <rect x="0" y="0" width="180" height="600" fill="#1e293b"/>
+  <rect x="12" y="12" width="156" height="24" rx="4" fill="#334155"/>
+  <text x="24" y="29" font-size="11" fill="#94a3b8">☰  Ticketify</text>
+  <rect x="12" y="52" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="70" font-size="11" fill="#94a3b8">■  Dashboard</text>
+  <rect x="12" y="86" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="104" font-size="11" fill="#94a3b8">■  Published</text>
+  <rect x="12" y="120" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="138" font-size="11" fill="#94a3b8">■  Pending</text>
+  <rect x="12" y="154" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="172" font-size="11" fill="#94a3b8">■  Users</text>
+  <rect x="12" y="188" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="206" font-size="11" fill="#94a3b8">■  Roles</text>
+  <rect x="12" y="222" width="156" height="28" rx="4" fill="#3b82f6"/>
+  <text x="24" y="240" font-size="11" fill="#fff">■  Categories</text>
+  <rect x="12" y="256" width="156" height="28" rx="4" fill="none" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="274" font-size="11" fill="#94a3b8">■  Statistik</text>
+
+  <rect x="180" y="0" width="620" height="48" fill="#f8fafc"/>
+  <line x1="180" y1="48" x2="800" y2="48" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="196" y="30" font-size="15" font-weight="bold" fill="#1e293b">Event Categories</text>
+
+  <!-- Stats -->
+  <rect x="196" y="56" width="140" height="56" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="212" y="76" font-size="9" fill="#64748b">Total</text><text x="212" y="98" font-size="16" font-weight="bold" fill="#1e293b">12</text>
+  <rect x="348" y="56" width="140" height="56" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="364" y="76" font-size="9" fill="#64748b">Deleted</text><text x="364" y="98" font-size="16" font-weight="bold" fill="#1e293b">2</text>
+  <rect x="500" y="56" width="140" height="56" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="516" y="76" font-size="9" fill="#64748b">Events Tagged</text><text x="516" y="98" font-size="16" font-weight="bold" fill="#1e293b">28</text>
+  <rect x="652" y="56" width="140" height="56" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="668" y="76" font-size="9" fill="#64748b">Most Used</text><text x="668" y="98" font-size="16" font-weight="bold" fill="#1e293b">Teknologi</text>
+
+  <!-- Tabs -->
+  <rect x="196" y="124" width="60" height="28" rx="6" fill="#3b82f6"/>
+  <text x="208" y="143" font-size="10" fill="#fff">Events</text>
+  <rect x="260" y="124" width="50" height="28" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="270" y="143" font-size="10" fill="#64748b">UKM</text>
+  <rect x="314" y="124" width="70" height="28" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="326" y="143" font-size="10" fill="#64748b">Deleted</text>
+
+  <!-- Add button -->
+  <rect x="650" y="124" width="100" height="28" rx="6" fill="#3b82f6"/>
+  <text x="664" y="143" font-size="9" fill="#fff">+ Add Category</text>
+
+  <!-- Search -->
+  <rect x="196" y="164" width="200" height="30" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="210" y="183" font-size="10" fill="#94a3b8">🔍 Cari kategori...</text>
+
+  <!-- Table -->
+  <rect x="196" y="204" width="594" height="30" rx="6 6 0 0" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="206" y="224" font-size="9" font-weight="bold" fill="#64748b">No</text>
+  <text x="250" y="224" font-size="9" font-weight="bold" fill="#64748b">Nama Kategori</text>
+  <text x="420" y="224" font-size="9" font-weight="bold" fill="#64748b">Events</text>
+  <text x="520" y="224" font-size="9" font-weight="bold" fill="#64748b">Type</text>
+  <text x="660" y="224" font-size="9" font-weight="bold" fill="#64748b">Actions</text>
+
+  <rect x="196" y="234" width="594" height="36" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="206" y="256" font-size="10" fill="#64748b">1</text>
+  <text x="250" y="256" font-size="10" fill="#1e293b">Teknologi</text>
+  <text x="420" y="256" font-size="10" fill="#64748b">8</text>
+  <rect x="510" y="240" width="50" height="18" rx="4" fill="#eff6ff"/>
+  <text x="520" y="252" font-size="8" fill="#3b82f6">Events</text>
+  <rect x="640" y="240" width="30" height="22" rx="4" fill="#eff6ff"/><text x="650" y="255" font-size="8" fill="#3b82f6">✎</text>
+  <rect x="674" y="240" width="30" height="22" rx="4" fill="#fef2f2"/><text x="684" y="255" font-size="8" fill="#ef4444">✕</text>
+
+  <rect x="196" y="270" width="594" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="206" y="292" font-size="10" fill="#64748b">2</text>
+  <text x="250" y="292" font-size="10" fill="#1e293b">Olahraga</text>
+  <text x="420" y="292" font-size="10" fill="#64748b">5</text>
+  <rect x="510" y="276" width="50" height="18" rx="4" fill="#eff6ff"/>
+  <text x="520" y="288" font-size="8" fill="#3b82f6">Events</text>
+  <rect x="640" y="276" width="30" height="22" rx="4" fill="#eff6ff"/><text x="650" y="291" font-size="8" fill="#3b82f6">✎</text>
+  <rect x="674" y="276" width="30" height="22" rx="4" fill="#fef2f2"/><text x="684" y="291" font-size="8" fill="#ef4444">✕</text>
+
+  <!-- Add Category Modal -->
+  <rect x="280" y="340" width="240" height="160" rx="14" fill="#fff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+  <defs><filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/></filter></defs>
+  <text x="300" y="370" font-size="13" font-weight="bold" fill="#1e293b">Add Category</text>
+  <text x="490" y="370" font-size="14" fill="#94a3b8">✕</text>
+  <text x="300" y="395" font-size="9" fill="#64748b">Nama Kategori</text>
+  <rect x="300" y="400" width="200" height="26" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="310" y="417" font-size="9" fill="#94a3b8">Masukkan nama...</text>
+  <rect x="300" y="440" width="90" height="28" rx="6" fill="#f1f5f9"/><text x="324" y="459" font-size="10" fill="#475569">Batal</text>
+  <rect x="400" y="440" width="90" height="28" rx="6" fill="#3b82f6"/><text x="420" y="459" font-size="10" fill="#fff">Simpan</text>
+</svg>
