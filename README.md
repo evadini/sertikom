@@ -1,4 +1,4 @@
-# sertikom
+# Certificate in Fullstack Developer Associate (CFDA)
 # Ticketify (Event & Ticketing Management System)
 
 Ticketify adalah sistem manajemen event dan tiket berbasis web yang dikembangkan untuk mengatasi masalah pengelolaan event kampus (UKM) yang selama ini masih dilakukan secara manual menggunakan Ms. Excel, Google Form, WhatsApp, dan tiket fisik.
