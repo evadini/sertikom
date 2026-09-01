@@ -18,8 +18,8 @@ Ticketify hadir sebagai solusi terintegrasi untuk pengelolaan event dan tiket se
 
 ## Teknologi yang Digunakan
 
-- **Laravel** (PHP) — backend framework
-- **JavaScript** — interaktivitas front-end
+- **Laravel** 
+- **JavaScript** 
 - **PHP**
 
 ## Aktor Sistem
